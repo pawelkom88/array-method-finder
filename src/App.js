@@ -1,7 +1,12 @@
+import Header from "./components/stateless/Header";
 import "./App.css";
 
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
