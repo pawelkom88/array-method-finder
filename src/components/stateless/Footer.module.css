@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0;
+}
+
+.hr {
+  display: flex;
+  height: 4px;
+  margin-bottom: 1rem;
+}
+
+.hr span {
+  display: block;
+  width: 33.3%;
+}
+
+.hr span:first-child {
+  background-color: red;
+}
+.hr span:nth-child(2) {
+  background-color: yellow;
+}
+.hr span:last-child {
+  background-color: blue;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github small {
+  margin-right: 0.5rem;
+}
