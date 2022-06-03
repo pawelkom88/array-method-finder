@@ -1,4 +1,4 @@
-import classes from "./Header.module.css";
+import classes from './Header.module.css';
 
 export default function Header() {
   // local storage
@@ -9,9 +9,7 @@ export default function Header() {
         Array method finder
         <span className={classes.bracket}> ]</span>
       </h1>
-      <p className={classes.paragraph}>
-        Quicky find the right tool for the job !
-      </p>
+      <p className={classes.paragraph}>Quicky find the right tool for the job !</p>
     </header>
   );
 }
