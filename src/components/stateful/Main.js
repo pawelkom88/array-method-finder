@@ -1,4 +1,5 @@
 import {useState} from 'react';
+// import arrayMethods from '../../data/arrayMethods'
 import MethodFinder from './MethodFinder';
 
 import classes from './Main.module.css';
