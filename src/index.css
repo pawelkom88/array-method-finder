@@ -25,3 +25,23 @@ body {
   line-height: 1.6;
   transition: background-color 0.5s ease-in-out;
 }
+
+select {
+  background: none;
+  color: #000;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+option:first-child {
+  font-weight: bold;
+  background: var(--bg-color);
+  color: #000;
+}
+
+option {
+  background: var(--navy-blue);
+  color: var(--bg-color);
+}
