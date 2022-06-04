@@ -7,17 +7,17 @@ import RemoveItems from '../method-types/RemoveItems';
 import classes from './Main.module.css';
 
 export default function Main() {
-  const [method, setMethod] = useState('');
+  const [methodType, setMethodType] = useState('');
   const [chooseMethod, setChooseMethod] = useState('');
 
   return (
     <main className={classes.main}>
-      <MethodFinder setMethod={setMethod}>
-        {method && (
+      <MethodFinder setMethod={setMethodType}>
+        {methodType && (
           <div className="container">
             <div className="method-types">
-              {method === 'addItems' && <AddItems setChooseMethod={setChooseMethod} />}
-              {method === 'removeItems' && <RemoveItems setChooseMethod={setChooseMethod} />}
+              {methodType === 'addItems' && <AddItems setChooseMethod={setChooseMethod} />}
+              {methodType === 'removeItems' && <RemoveItems setChooseMethod={setChooseMethod} />}
             </div>
           </div>
         )}
