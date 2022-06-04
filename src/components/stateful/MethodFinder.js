@@ -1,10 +1,10 @@
 import classes from './MethodFinder.module.css';
 
-export default function MethodFinder({setMethod, children}) {
+export default function MethodFinder({setMethodType, children}) {
   return (
-    <section className={classes.col - 1}>
+    <section className={classes['col - 1']}>
       <p>I have an array and wanna :</p>
-      <select onChange={e => setMethod(e.target.value)}>
+      <select onChange={e => setMethodType(e.target.value)}>
         <option value="">options</option>
         <option value="addItems">add items or other arrays</option>
         <option value="removeItems">remove items</option>
