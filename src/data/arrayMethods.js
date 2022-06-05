@@ -1,9 +1,10 @@
 const arrayMethods = [
   {
+    id: 1,
     name: 'Array.splice()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: "arr.splice(2, 0, 'HTML');",
+      example3: "arr.splice(2, 0, 'HTML');",
     },
     output: "[1, 2, 'HTML', 3];",
     type: 'add',
@@ -11,10 +12,11 @@ const arrayMethods = [
     doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
   },
   {
+    id: 2,
     name: 'Array.push()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: "arr.push('HTML');",
+      example3: "arr.push('HTML');",
     },
     output: "[1, 2, 3, 'HTML'];",
     type: 'addEnd',
@@ -22,10 +24,11 @@ const arrayMethods = [
     doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push',
   },
   {
+    id: 3,
     name: 'Array.unshift()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: "arr.unshift('HTML', 'CSS');",
+      example3: "arr.unshift('HTML', 'CSS');",
     },
     output: "['HTML','CSS', 1, 2, 3];",
     type: 'addFront',
@@ -34,6 +37,7 @@ const arrayMethods = [
   },
 
   {
+    id: 4,
     name: 'Array.concat()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
@@ -46,10 +50,11 @@ const arrayMethods = [
     doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat',
   },
   {
+    id: 5,
     name: 'Array.splice()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: "arr.splice(2, 0, 'HTML');",
+      example3: "arr.splice(2, 0, 'HTML');",
     },
     output: "[1, 2, 'HTML', 3];",
     type: 'remove',
@@ -57,10 +62,11 @@ const arrayMethods = [
     doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
   },
   {
+    id: 6,
     name: 'Array.pop()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: 'arr.pop();',
+      example3: 'arr.pop();',
     },
     output: '[1, 2];',
     type: 'removeLast',
@@ -69,10 +75,11 @@ const arrayMethods = [
   },
 
   {
+    id: 7,
     name: 'Array.shift()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: 'arr.shift();',
+      example3: 'arr.shift();',
     },
     output: '[2, 3];',
     type: 'removeFirst',
@@ -81,10 +88,11 @@ const arrayMethods = [
   },
 
   {
+    id: 8,
     name: 'Array.slice()',
     usage: {
       example1: 'let arr = [1, 2, 3];',
-      example2: 'let slicedArr = arr.slice(1);',
+      example3: 'let slicedArr = arr.slice(1);',
     },
     output: '[2, 3];',
     type: 'removeOther',
