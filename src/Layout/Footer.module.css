@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github small {
+  margin-right: 0.5rem;
+}
