@@ -1,0 +1,14 @@
+.usage {
+  background-color: var(--navy-blue);
+  color: var(--code-color);
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.usage-code {
+  color: var(--code-color2);
+}
+
+.paragraph {
+  color: var(--code-color);
+}

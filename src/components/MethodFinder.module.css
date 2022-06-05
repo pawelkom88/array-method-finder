@@ -1,0 +1,12 @@
+.col-1 {
+  flex-basis: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .col-1 {
+    flex-basis: 100%;
+  }
+}

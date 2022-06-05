@@ -1,11 +1,11 @@
 import {useEffect, useState} from 'react';
 
 import arrayMethods from '../data/arrayMethods';
-import MethodFinder from '../components/stateful/MethodFinder';
-import MethodDesc from '../components/stateful/MethodDesc';
-import MethodOutput from '../components/stateful/MethodOutput';
-import Usage from '../components/stateful/Usage';
-import Output from '../components/stateful/Output';
+import MethodFinder from '../components/MethodFinder';
+import MethodDesc from '../components/MethodDesc';
+import MethodOutput from '../components/MethodOutput';
+import Usage from '../components/Usage';
+import Output from '../components/Output';
 import AddItems from '../components/method-types/AddItems';
 import RemoveItems from '../components/method-types/RemoveItems';
 import FindItems from '../components/method-types/FindItems';
