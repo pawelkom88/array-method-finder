@@ -5,6 +5,7 @@
   --dark-grey: #333;
   --navy-blue: #201c29;
   --code-color: #f5d67b;
+  --code-color2: #83ba52;
 }
 
 * {
@@ -24,6 +25,19 @@ body {
   letter-spacing: 1px;
   line-height: 1.6;
   transition: background-color 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 2vw, 3rem);
+  font-weight: 400;
+}
+
+h1 span {
+  color: red;
+}
+
+a {
+  color: var(--bg-color);
 }
 
 select {
@@ -51,4 +65,29 @@ option {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.method-types {
+  text-align: center;
+}
+
+.method-details {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  background-color: var(--navy-blue);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
+.method-details h3 {
+  color: var(--code-color);
+}
+
+.paragraph {
+  color: var(--bg-color);
 }
