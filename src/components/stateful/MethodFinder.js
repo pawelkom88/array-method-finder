@@ -2,7 +2,7 @@ import classes from './MethodFinder.module.css';
 
 export default function MethodFinder({setMethodType, children}) {
   return (
-    <section className={classes['col - 1']}>
+    <section className={classes['col-1']}>
       <p>I have an array and wanna :</p>
       <select onChange={e => setMethodType(e.target.value)}>
         <option value="">options</option>
