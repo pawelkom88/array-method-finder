@@ -1,0 +1,13 @@
+.col-2-hidden {
+  display: none;
+}
+
+.col-2 {
+  flex-basis: 48%;
+}
+
+@media (max-width: 800px) {
+  .col-2 {
+    flex-basis: 100%;
+  }
+}
