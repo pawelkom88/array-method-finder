@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+}
+
+header a {
+  color: #222;
+}
+
+.paragraph {
+  font-style: italic;
+}
+
+.bracket {
+  color: red;
+}
