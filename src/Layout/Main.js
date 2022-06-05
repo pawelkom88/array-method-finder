@@ -32,26 +32,24 @@ export default function Main() {
   return (
     <main>
       <MethodFinder setMethod={setMethodType}>
-        <div className="container">
-          <div className="method-types">
-            {methodType === 'addItems' && <AddItems setChooseMethod={setChooseMethod} />}
-            {methodType === 'removeItems' && <RemoveItems setChooseMethod={setChooseMethod} />}
-            {methodType === 'findItems' && (
-              <FindItems setChooseMethod={setChooseMethod}>
-                {chooseMethod === 'singleItem' && <SingleItem setSingleItem={setSingleItem} />}
-                {chooseMethod === 'multipleItems' && (
-                  <MultipleItems setMultipleItems={setMultipleItems} />
-                )}
-              </FindItems>
-            )}
-          </div>
-          <MethodDesc
-            data={arrayMethods}
-            chooseMethod={chooseMethod}
-            singleItem={singleItem}
-            multipleItems={multipleItems}
-          />
+        <div className="method-types">
+          {methodType === 'addItems' && <AddItems setChooseMethod={setChooseMethod} />}
+          {methodType === 'removeItems' && <RemoveItems setChooseMethod={setChooseMethod} />}
+          {methodType === 'findItems' && (
+            <FindItems setChooseMethod={setChooseMethod}>
+              {chooseMethod === 'singleItem' && <SingleItem setSingleItem={setSingleItem} />}
+              {chooseMethod === 'multipleItems' && (
+                <MultipleItems setMultipleItems={setMultipleItems} />
+              )}
+            </FindItems>
+          )}
         </div>
+        <MethodDesc
+          data={arrayMethods}
+          chooseMethod={chooseMethod}
+          singleItem={singleItem}
+          multipleItems={multipleItems}
+        />
       </MethodFinder>
       <MethodOutput>
         <>
