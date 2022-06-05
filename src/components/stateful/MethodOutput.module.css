@@ -1,9 +1,5 @@
-.col-2-hidden {
-  display: none;
-}
-
 .col-2 {
-  flex-basis: 48%;
+  flex-basis: 46%;
 }
 
 @media (max-width: 800px) {

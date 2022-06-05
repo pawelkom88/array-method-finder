@@ -31,7 +31,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  gap: 4%;
+  gap: 8%;
 }
 
 h1 {
@@ -93,8 +93,8 @@ option {
   font-size: clamp(1rem, 1vw, 1.5rem);
   background-color: var(--navy-blue);
   border-radius: 5px;
-  padding: 1.5rem;
-  margin: 1rem;
+  padding: 3rem;
+  margin: 1rem 0;
 }
 
 .method-details h3 {
