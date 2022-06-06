@@ -327,6 +327,42 @@ const arrayMethods = [
     desc: 'Sorts the elements of an array in place and returns the array. Read documentation for more details !',
     doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort',
   },
+  {
+    id: 27,
+    name: 'Array.length',
+    usage: {
+      example1: 'let arr = [1, 2, 3];',
+      example3: 'arr.length;',
+    },
+    output: '3',
+    type: 'length',
+    desc: 'Returns the number of elements in that array.',
+    doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length',
+  },
+  {
+    id: 28,
+    name: 'Array.fill()',
+    usage: {
+      example1: 'let arr = [1, 2, 3];',
+      example3: 'arr.fill("React rocks");',
+    },
+    output: '["React rocks","React rocks","React rocks"]',
+    type: 'fill',
+    desc: 'Returns the number of elements in that array.',
+    doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill',
+  },
+  {
+    id: 29,
+    name: 'Array.copyWithin()',
+    usage: {
+      example1: 'let arr = [1, 2, 3];',
+      example3: 'arr.copyWithin(0, 1);',
+    },
+    output: '[2, 3, 3]',
+    type: 'copyWithin',
+    desc: 'Copies a sequence of array elements within the array. You can specify either just the ending element (where begin will default to zero) or both the beginning and the end, comma-separated.',
+    doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin',
+  },
 ];
 
 export default arrayMethods;
