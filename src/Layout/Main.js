@@ -10,6 +10,7 @@ import AddItems from '../components/method-types/AddItems';
 import RemoveItems from '../components/method-types/RemoveItems';
 import IterateOverItems from '../components/method-types/IterateOverItems';
 import ReturnString from '../components/method-types/ReturnString';
+import SortItems from '../components/method-types/SortItems';
 import FindItems from '../components/method-types/FindItems';
 import SingleItem from '../components/method-types/SingleItem';
 import MultipleItems from '../components/method-types/MultipleItems';
@@ -46,6 +47,7 @@ export default function Main() {
           )}
           {methodType === 'iterateOver' && <IterateOverItems setChooseMethod={setChooseMethod} />}
           {methodType === 'returnString' && <ReturnString setChooseMethod={setChooseMethod} />}
+          {methodType === 'sortItems' && <SortItems setChooseMethod={setChooseMethod} />}
         </div>
         <MethodDesc
           data={arrayMethods}
