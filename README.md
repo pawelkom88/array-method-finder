@@ -1,6 +1,7 @@
 <div style="text-align:center">
 <img src="/public/logo.png" alt="Project logo" width="350" height="60"/>
 </div>
+
 ## About The Project
 
 We all strugle to remember all array methods. There are so many of them. To make our life easier I
