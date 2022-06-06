@@ -8,6 +8,7 @@ import Usage from '../components/Usage';
 import Output from '../components/Output';
 import AddItems from '../components/method-types/AddItems';
 import RemoveItems from '../components/method-types/RemoveItems';
+import IterateOverItems from '../components/method-types/IterateOverItems';
 import FindItems from '../components/method-types/FindItems';
 import SingleItem from '../components/method-types/SingleItem';
 import MultipleItems from '../components/method-types/MultipleItems';
@@ -42,6 +43,7 @@ export default function Main() {
               )}
             </FindItems>
           )}
+          {methodType === 'iterateOver' && <IterateOverItems setChooseMethod={setChooseMethod} />}
         </div>
         <MethodDesc
           data={arrayMethods}
