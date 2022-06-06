@@ -17,7 +17,16 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
               return (
                 <div key={method.id}>
                   <p className={classes.paragraph}>{method.usage.example1}</p>
-                  <p className={classes.paragraph}>{method.usage.example2}</p>
+                  <p
+                    className={
+                      method.usage.example2 !== undefined &&
+                      method.usage.example2.includes('function')
+                        ? classes.highlight
+                        : classes.paragraph
+                    }
+                  >
+                    {method.usage.example2}
+                  </p>
                   <p className={classes['usage-code']}>{method.usage.example3}</p>
                 </div>
               );

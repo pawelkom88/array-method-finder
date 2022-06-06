@@ -6,6 +6,7 @@
   --navy-blue: #201c29;
   --code-color: #f5d67b;
   --code-color2: #83ba52;
+  --code-output: #72e0d1;
 }
 
 * {
@@ -19,7 +20,7 @@ html {
 body {
   max-width: calc(1600px - 5%);
   margin: 0 auto;
-  padding: 2% 5%;
+  padding: 0 5%;
   background-color: var(--bg-color);
   color: var(--dark-grey);
   letter-spacing: 1px;
@@ -95,6 +96,7 @@ option {
   border-radius: 5px;
   padding: 3rem;
   margin: 1rem 0;
+  align-self: stretch;
 }
 
 .method-details h3 {
