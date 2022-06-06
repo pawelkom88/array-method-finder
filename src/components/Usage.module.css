@@ -12,3 +12,7 @@
 .paragraph {
   color: var(--code-color);
 }
+
+.highlight {
+  color: var(--bg-color);
+}

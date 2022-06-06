@@ -28,7 +28,7 @@ export default function Main() {
       setMultipleItems('');
     }
   }, [chooseMethod, setSingleItem, setMultipleItems]);
-
+  console.log(chooseMethod);
   return (
     <main>
       <MethodFinder setMethod={setMethodType}>

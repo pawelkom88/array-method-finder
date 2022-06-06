@@ -14,7 +14,7 @@ export default function MethodFinder({setMethod, children}) {
         <option value="sortItems">sort my array</option>
         <option value="other">something else</option>
       </select>
-      <div>{children}</div>
+      {children}
     </section>
   );
 }
