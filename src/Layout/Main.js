@@ -10,7 +10,7 @@ import AddItems from '../components/method-types/AddItems';
 import RemoveItems from '../components/method-types/RemoveItems';
 import FindItems from '../components/method-types/FindItems';
 import SingleItem from '../components/method-types/SingleItem';
-import MultipleItems from '../components/method-types/SingleItem';
+import MultipleItems from '../components/method-types/MultipleItems';
 
 export default function Main() {
   const [methodType, setMethodType] = useState('');
@@ -28,7 +28,6 @@ export default function Main() {
       setMultipleItems('');
     }
   }, [chooseMethod, setSingleItem, setMultipleItems]);
-  console.log(chooseMethod);
   return (
     <main>
       <MethodFinder setMethod={setMethodType}>
