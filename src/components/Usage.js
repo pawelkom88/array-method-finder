@@ -8,31 +8,30 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
       </header>
       <div className={classes.usage}>
         <div className="method-details">
-          {data.map(method => {
-            if (
-              chooseMethod === method.type ||
-              singleItem === method.type ||
-              multipleItems === method.type
-            ) {
-              return (
-                <div key={method.id}>
-                  <p className={classes.paragraph}>{method.usage.example1}</p>
-                  <p
-                    className={
-                      method.usage.example2 !== undefined &&
-                      method.usage.example2.includes('function')
-                        ? classes.highlight
-                        : classes.paragraph
-                    }
-                  >
-                    {method.usage.example2}
-                  </p>
-                  <p className={classes['usage-code']}>{method.usage.example3}</p>
-                </div>
-              );
-            }
-            return '';
-          })}
+          {data &&
+            data.map(method => {
+              if (
+                chooseMethod === method.type ||
+                singleItem === method.type ||
+                multipleItems === method.type
+              ) {
+                return (
+                  <div key={method.id}>
+                    {method.usage.map((example, i) => {
+                      const variableColor = example.includes('let') && classes['usage-code'];
+                      const functionColor = example.includes('function') && classes.highlight;
+
+                      return (
+                        <p key={i} className={(variableColor, functionColor)}>
+                          {example}
+                        </p>
+                      );
+                    })}
+                  </div>
+                );
+              }
+              return '';
+            })}
         </div>
       </div>
     </>
