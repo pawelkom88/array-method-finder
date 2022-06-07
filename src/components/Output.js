@@ -8,20 +8,21 @@ export default function Output({data, chooseMethod, singleItem, multipleItems}) 
       </header>
       <div className={classes.output}>
         <div className="method-details">
-          {data.map(method => {
-            if (
-              chooseMethod === method.type ||
-              singleItem === method.type ||
-              multipleItems === method.type
-            ) {
-              return (
-                <span key={method.id} className={classes['output-code']}>
-                  {method.output}
-                </span>
-              );
-            }
-            return '';
-          })}
+          {data &&
+            data.map(method => {
+              if (
+                chooseMethod === method.type ||
+                singleItem === method.type ||
+                multipleItems === method.type
+              ) {
+                return (
+                  <span key={method.id} className={classes['output-code']}>
+                    {method.output}
+                  </span>
+                );
+              }
+              return '';
+            })}
         </div>
       </div>
     </>
