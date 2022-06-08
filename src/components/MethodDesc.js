@@ -3,11 +3,7 @@ export default function MethodDesc({data, chooseMethod, singleItem, multipleItem
     <div className="method-details">
       {data &&
         data.map(prop => {
-          if (
-            chooseMethod === prop.type ||
-            singleItem === prop.type ||
-            multipleItems === prop.type
-          ) {
+          if (chooseMethod === prop.type) {
             return (
               <article key={prop.id}>
                 <header>
@@ -20,7 +16,7 @@ export default function MethodDesc({data, chooseMethod, singleItem, multipleItem
               </article>
             );
           }
-          return '';
+          return "";
         })}
     </div>
   );

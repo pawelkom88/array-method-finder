@@ -1,4 +1,4 @@
-import classes from './Output.module.css';
+import classes from "./Output.module.css";
 
 export default function Output({data, chooseMethod, singleItem, multipleItems}) {
   return (
@@ -10,18 +10,14 @@ export default function Output({data, chooseMethod, singleItem, multipleItems}) 
         <div className="method-details">
           {data &&
             data.map(method => {
-              if (
-                chooseMethod === method.type ||
-                singleItem === method.type ||
-                multipleItems === method.type
-              ) {
+              if (chooseMethod === method.type) {
                 return (
-                  <span key={method.id} className={classes['output-code']}>
+                  <span key={method.id} className={classes["output-code"]}>
                     {method.output}
                   </span>
                 );
               }
-              return '';
+              return "";
             })}
         </div>
       </div>
