@@ -14,7 +14,7 @@ decided to create this tool. It is heavily inspired by one of the Sarah Drasner'
 
 ## How I worked on this project
 
-My goal was to practice React and Git workflow.
+My goal was to practice React, Firebase and Git workflow.
 
 ## Why I built the project this way
 
@@ -27,9 +27,10 @@ My goal was to practice React and Git workflow.
 - CSS modules are great for styling. They scoped locally by default. To make styling easier I used
   css variables.
 
+- I used Firebase as backend for storing data.
+
 ## What I would change / upgrade if I have more time ?
 
-- Build simple API and fetch data from it.
 - Add testing using Jest.
 - Add animation.
 
