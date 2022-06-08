@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
 :root {
   --bg-color: #fff;
@@ -14,7 +14,7 @@
 }
 
 html {
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   padding: 0 5%;
   background-color: var(--bg-color);
   color: var(--dark-grey);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1.6;
 }
 
@@ -32,7 +32,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
   gap: 8%;
 }
 
@@ -43,10 +42,6 @@ h1 {
 
 h1 span {
   color: red;
-}
-
-h4 {
-  margin-bottom: 0;
 }
 
 a {
@@ -87,7 +82,7 @@ option {
 
 .method-details {
   min-width: 20vh;
-  min-height: 20vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +91,7 @@ option {
   background-color: var(--navy-blue);
   border-radius: 5px;
   padding: 3rem;
-  margin: 1rem 0;
+  margin-top: auto;
   align-self: stretch;
 }
 
@@ -106,4 +101,18 @@ option {
 
 .paragraph {
   color: var(--bg-color);
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

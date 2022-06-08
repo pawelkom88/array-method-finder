@@ -1,7 +1,6 @@
 .output {
   background-color: var(--navy-blue);
   color: var(--code-color);
-  margin: 1rem 0;
   border-radius: 5px;
 }
 

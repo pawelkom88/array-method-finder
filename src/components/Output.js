@@ -1,8 +1,8 @@
 import classes from "./Output.module.css";
 
-export default function Output({data, chooseMethod, singleItem, multipleItems}) {
+export default function Output({data, chooseMethod}) {
   return (
-    <>
+    <div className="fadeIn">
       <header>
         <h4>Output</h4>
       </header>
@@ -12,7 +12,7 @@ export default function Output({data, chooseMethod, singleItem, multipleItems}) 
             data.map(method => {
               if (chooseMethod === method.type) {
                 return (
-                  <span key={method.id} className={classes["output-code"]}>
+                  <span key={method.id} className={`${classes["output-code"]} fadeIn`}>
                     {method.output}
                   </span>
                 );
@@ -21,6 +21,6 @@ export default function Output({data, chooseMethod, singleItem, multipleItems}) 
             })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
