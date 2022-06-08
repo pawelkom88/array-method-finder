@@ -1,4 +1,4 @@
-import classes from './Usage.module.css';
+import classes from "./Usage.module.css";
 
 export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
   return (
@@ -18,8 +18,12 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
                 return (
                   <div key={method.id}>
                     {method.usage.map((example, i) => {
-                      const variableColor = example.includes('let') && classes['usage-code'];
-                      const functionColor = example.includes('function') && classes.highlight;
+                      const variableColor = example.includes("let")
+                        ? classes["usage-code"]
+                        : undefined;
+                      const functionColor = example.includes("function")
+                        ? classes.highlight
+                        : undefined;
 
                       return (
                         <p key={i} className={(variableColor, functionColor)}>
@@ -30,7 +34,7 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
                   </div>
                 );
               }
-              return '';
+              return "";
             })}
         </div>
       </div>
