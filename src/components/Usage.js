@@ -1,8 +1,8 @@
 import classes from "./Usage.module.css";
 
-export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
+export default function Usage({data, chooseMethod}) {
   return (
-    <>
+    <div className="fadeIn">
       <header>
         <h4>Usage</h4>
       </header>
@@ -22,7 +22,7 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
                         : undefined;
 
                       return (
-                        <p key={i} className={(variableColor, functionColor)}>
+                        <p key={i} className={`${variableColor} ${functionColor} fadeIn`}>
                           {example}
                         </p>
                       );
@@ -34,6 +34,6 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
             })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
