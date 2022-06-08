@@ -10,11 +10,7 @@ export default function Usage({data, chooseMethod, singleItem, multipleItems}) {
         <div className="method-details">
           {data &&
             data.map(method => {
-              if (
-                chooseMethod === method.type ||
-                singleItem === method.type ||
-                multipleItems === method.type
-              ) {
+              if (chooseMethod === method.type) {
                 return (
                   <div key={method.id}>
                     {method.usage.map((example, i) => {
