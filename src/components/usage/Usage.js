@@ -1,6 +1,6 @@
 import classes from "./Usage.module.css";
 
-export default function Usage({data, chooseMethod}) {
+export default function Usage({data = [], chooseMethod}) {
   return (
     <div className="fadeIn">
       <header>
