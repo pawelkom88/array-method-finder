@@ -58,6 +58,10 @@ select {
   text-align: center;
 }
 
+select:focus {
+  background-color: var(--code-color);
+}
+
 option:first-child {
   font-weight: bold;
   background: var(--bg-color);
