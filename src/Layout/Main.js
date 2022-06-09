@@ -1,13 +1,13 @@
 import {useEffect, useState} from "react";
 import useFetch from "../hooks/useFetch";
 
-import MethodFinder from "../components/MethodFinder";
+import MethodFinder from "../components/method-finder/MethodFinder";
 import MethodDesc from "../components/MethodDesc";
-import MethodOutput from "../components/MethodOutput";
-import Usage from "../components/Usage";
-import Output from "../components/Output";
+import MethodOutput from "../components/method-output/MethodOutput";
+import Usage from "../components/usage/Usage";
+import Output from "../components/output/Output";
 import Spinner from "../components/utilities/Spinner";
-import Select from "../components/Select";
+import Select from "../components/select/Select";
 
 export default function Main() {
   const {data: methods, loading, error} = useFetch("methods");
