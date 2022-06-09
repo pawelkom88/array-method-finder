@@ -1,6 +1,6 @@
 import classes from "./Output.module.css";
 
-export default function Output({data, chooseMethod}) {
+export default function Output({data = [], chooseMethod}) {
   return (
     <div className="fadeIn">
       <header>

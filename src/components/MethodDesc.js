@@ -1,4 +1,4 @@
-export default function MethodDesc({data, chooseMethod}) {
+export default function MethodDesc({data = [], chooseMethod}) {
   return (
     <div style={{minHeight: "40vh"}} className="method-details fadeIn">
       {data &&
