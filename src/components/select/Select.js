@@ -1,10 +1,7 @@
 let options = [];
 
 export default function Select({methodType, data = [], setChooseMethod}) {
-  data.forEach(obj => {
-    const property = obj[methodType];
-    createArrayOfMethodsTypes(property);
-  });
+  createArrayOfMethodsTypes(data, methodType);
 
   return (
     <>
@@ -22,10 +19,13 @@ export default function Select({methodType, data = [], setChooseMethod}) {
   );
 }
 
-function createArrayOfMethodsTypes(property) {
-  if (property !== undefined) {
-    for (const [type, desc] of Object.entries(property)) {
-      options.push({type, desc});
+function createArrayOfMethodsTypes(data, methodType) {
+  data.forEach(obj => {
+    const property = obj[methodType];
+    if (property !== undefined && typeof property === "object") {
+      for (const [type, desc] of Object.entries(property)) {
+        options.push({type, desc});
+      }
     }
-  }
+  });
 }
