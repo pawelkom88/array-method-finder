@@ -6,11 +6,12 @@
 
 We all strugle to remember all array methods. There are so many of them. To make our life easier I
 decided to create this tool. It is heavily inspired by one of the Sarah Drasner's project
-<a href="https://github.com/sdras/array-explorer">link to repo</a>.
+<a href="https://github.com/sdras/array-explorer" rel="noreferrer" target="_blank">link to repo</a>.
 
 ## Demo
 
-<a href="https://array-method-finder.netlify.app">link to project online</a>
+<a href="https://array-method-finder.netlify.app" rel="noreferrer" target="_blank">link to project
+online</a>
 
 ## How I worked on this project
 
@@ -27,11 +28,9 @@ My goal was to practice React, Firebase and Git workflow.
 - CSS modules are great for styling. They scoped locally by default. To make styling easier I used
   css variables.
 
-- I used Firebase as backend for storing data.
+- I used Firebase as backend for fetching data.
 
-## What I would change / upgrade if I have more time ?
+- I wrote some simple tests in React Testing Library
 
-- Add testing using Jest.
-- Add animation.
 
 Any suggestions to imporove the project are more than welcome.
